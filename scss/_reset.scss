@@ -3,6 +3,13 @@
     padding: 0;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
+    font-family: 'Inter', sans-serif;
+    // font-family: 'Space Grotesk', sans-serif;
+    color: #fff;
+}
+
+html {
+    background-color: $purple-10;
 }
 
 img {
