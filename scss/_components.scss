@@ -20,8 +20,7 @@
     border: 1px solid rgba(255, 255, 255, 0.04);
     background: rgba(255, 255, 255, 0.04);
     padding: 4px 4px 4px 2.4rem;
-    display: flex;
-    align-items: center;
+    @include flex-center;
     width: 100%;
     max-width: 52.1rem;
     gap: 1.8rem;
@@ -46,12 +45,10 @@
     max-height: 17.4rem;
 
     .icon {
-        display: flex;
+        @include flexTotalCenter;
         width: 4.8rem;
         height: 4.8rem;
         padding: 1.1rem;
-        justify-content: center;
-        align-items: center;
         border-radius: 0.4rem;
         border: 1px solid rgba(255, 255, 255, 0.03);
         background: rgba(255, 255, 255, 0.03);
