@@ -1,0 +1,112 @@
+.btn-primary {
+    border-radius: 10.0rem;
+    border: 1px solid rgba(255, 255, 255, 0.16);
+    background: $purple-10;
+    display: inline-block;
+    padding: 1.4rem 2.3rem;
+    color: $gray-100;
+    font-size: 1.8rem;
+    font-weight: 500;
+    line-height: 150%;
+    transition: background-color .3s ease;
+
+    &:hover {
+        background-color: $purple-20;
+    }
+}
+
+.form-email {
+    border-radius: 100px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: rgba(255, 255, 255, 0.04);
+    padding: 4px 4px 4px 2.4rem;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 52.1rem;
+    gap: 1.8rem;
+
+    input {
+        all: unset;
+        flex: 1;
+        color: $gray-100;
+        font-family: Inter;
+        font-size: 1.6rem;
+        line-height: 150%;
+
+        &::placeholder {
+            color: $gray-300;
+        }
+    }
+}
+
+.resource-card {
+    width: 100%;
+    max-width: 22.5rem;
+    max-height: 17.4rem;
+
+    .icon {
+        display: flex;
+        width: 4.8rem;
+        height: 4.8rem;
+        padding: 1.1rem;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0.4rem;
+        border: 1px solid rgba(255, 255, 255, 0.03);
+        background: rgba(255, 255, 255, 0.03);
+        margin-bottom: 1.6rem;
+    }
+
+    .course-content {
+        h6 {
+            color: $gray-100;
+            font-family: Inter;
+            font-size: 18px;
+            font-style: normal;
+            line-height: 120%;
+            margin-bottom: 1.6rem;
+        }
+
+        p {
+            color: $gray-600;
+            font-size: 1.6rem;
+            line-height: 150%;
+        }
+    }
+
+
+}
+
+.review {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.8rem;
+
+    &>div {
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+
+        img {
+            width: 2.4rem;
+            height: 2.4rem;
+            flex-shrink: 0;
+        }
+
+        span {
+            color: $gray-100;
+            font-size: 1.8rem;
+            font-weight: 600;
+            line-height: 150%;
+
+            strong {
+                color: $gray-600;
+                font-weight: 400;
+            }
+        }
+
+
+    }
+}
