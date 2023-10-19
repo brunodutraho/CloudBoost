@@ -1,0 +1,36 @@
+header {
+    position: sticky;
+    top: 1.6rem;
+    margin-top: 1.6rem;
+    z-index: 2023;
+
+    .content-header {
+        border-radius: 100px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        background: rgba(255, 255, 255, 0.04);
+        backdrop-filter: blur(3.5px);
+        @include flexCenterBetween;
+        padding: 0.8rem 0.8rem 0.8rem 2.1rem;
+
+        .left-content {
+            @include flex-center;
+            gap: 1.6rem;
+
+            a {
+                @include flex-center;
+                gap: 0.8rem;
+
+                span {
+                    color: $gray-200;
+                    font-size: 1.6rem;
+                    font-weight: 500;
+                    line-height: 150%;
+                    transition: color .3s ease;
+                    &:hover {
+                        color: $purple-10;
+                    }
+                }
+            }
+        }
+    }
+}

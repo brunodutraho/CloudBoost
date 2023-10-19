@@ -5,11 +5,12 @@
     -webkit-font-smoothing: antialiased;
     font-family: 'Inter', sans-serif;
     // font-family: 'Space Grotesk', sans-serif;
-    color: #fff;
+    color: $gray-100;
 }
 
 html {
     background-color: $gray-900;
+    font-size: 62,5%;
 }
 
 img {
@@ -28,8 +29,4 @@ ul {
 
 a {
     text-decoration: none;
-}
-
-html {
-    font-size: 62,5%;
 }
