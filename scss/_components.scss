@@ -76,14 +76,11 @@
 }
 
 .review {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    @include flex-center;
     gap: 0.8rem;
 
     &>div {
-        display: flex;
-        align-items: center;
+        @include flex-center;
         gap: 0.4rem;
 
         img {
