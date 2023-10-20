@@ -26,10 +26,48 @@ header {
                     font-weight: 500;
                     line-height: 150%;
                     transition: color .3s ease;
+
                     &:hover {
                         color: $purple-10;
                     }
                 }
+            }
+        }
+
+        .btn-mobile {
+            display: none;
+        }
+    }
+
+    @include responsivo('intermedio') {
+        .content-header {
+            .btn-mobile {
+                display: block;
+                padding: 0 30px;
+            }
+
+            .left-content {
+                display: none;
+
+            }
+        }
+    }
+
+    @include responsivo('mobile') {
+        .content-header {
+            .logo {
+                max-width: 13.5rem;
+                max-height: 2.5rem;
+            }
+
+            .btn-mobile {
+                display: block;
+                padding: 0 20px;
+            }
+
+            .left-content {
+                display: none;
+
             }
         }
     }
