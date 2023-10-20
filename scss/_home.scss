@@ -39,3 +39,30 @@
         }
     }
 }
+
+.s-resources {
+    padding-top: 111px;
+    padding-bottom: 11.1rem;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.10);
+    .top {
+        @include flexCenterBetween;
+        margin-bottom: 8rem;
+        h3 {
+            max-width: 69rem;
+            letter-spacing: -1.2px;
+        }
+
+        p {
+            color: $gray-200;
+            max-width: 30.3rem;
+            font-size: 1.6rem;
+            line-height: 150%;
+        }
+    }
+
+    .all {
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+}
