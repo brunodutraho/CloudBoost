@@ -1,18 +1,18 @@
 .s-hero {
-    display: none;
     padding-top: 8rem;
 
     .hero-content {
-        @include flexCenterBetween;
+        @include flex-center;
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
         padding-bottom: 9.7rem;
+        justify-content: center;
 
         .left {
             flex: 1;
             max-width: 60rem;
 
             h1 {
-                font-size: 5.6rem;
+                font-size: 4.1rem;
                 margin-bottom: 1.6rem;
                 letter-spacing: -1.68px;
 
@@ -24,18 +24,103 @@
             }
 
             p {
-                max-width: 49.1rem;
+                max-width: 623px;
                 color: $gray-200;
-                font-size: 2.2rem;
+                font-size: 1.750rem;
                 line-height: 150%;
-                margin-bottom: 3.2rem;
+                margin-bottom: 2.8rem;
             }
 
             ul {
                 width: 100%;
                 max-width: 33.9rem;
                 @include flexCenterBetween;
-                margin: 4.8rem 0;
+                margin: 1.5625rem 0;
+            }
+        }
+
+        .img-mobile {
+            display: none;
+        }
+    }
+
+    @include responsivo('laptop') {
+        padding-top: 3rem;
+
+        .hero-content {
+            gap: 2rem;
+            padding-bottom: 5rem;
+
+            .left {
+                max-width: 34.375rem;
+
+                h1 {
+                    font-size: 2.875rem;
+                }
+
+                p {
+                    max-width: 33rem;
+                    font-size: 1.25rem;
+                    margin-bottom: 2rem;
+                }
+
+                ul {
+                    justify-content: flex-start;
+                    gap: 1.4375rem;
+                    margin: 1.1rem 8px;
+                }
+            }
+        }
+    }
+
+    @include responsivo('tablet') {
+        .hero-content {
+            flex-direction: column;
+            gap: 4rem;
+
+            .left {
+                max-width: 100%;
+                text-align: center;
+
+                p {
+                    margin: 0 auto;
+                    margin-bottom: 3rem;
+                }
+
+                ul {
+                    margin: 3rem auto;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+
+    @include responsivo('mobile') {
+        .hero-content {
+            gap: 3rem;
+            padding-bottom: 3rem;
+
+            .left {
+                h1 {
+                    font-size: 2.5rem;
+
+                    span {
+                        display: block;
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            &>img {
+                display: none;
+
+                &.img-mobile {
+                    display: block;
+                    max-width: 100%;
+                }
             }
         }
     }

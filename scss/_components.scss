@@ -3,9 +3,9 @@
     border: 1px solid rgba(255, 255, 255, 0.16);
     background: $purple-10;
     display: inline-block;
-    padding: 1.4rem 2.3rem;
+    padding: 1.1rem 1.5rem;
     color: $gray-100;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-weight: 500;
     line-height: 150%;
     transition: background-color .3s ease;
@@ -22,7 +22,7 @@
     padding: 4px 4px 4px 2.4rem;
     @include flex-center;
     width: 100%;
-    max-width: 52.1rem;
+    max-width: 39.75rem;
     gap: 1.8rem;
 
     input {
@@ -30,11 +30,41 @@
         flex: 1;
         color: $gray-100;
         font-family: Inter;
-        font-size: 1.6rem;
+        font-size: 1.2rem;
         line-height: 150%;
 
         &::placeholder {
             color: $gray-300;
+        }
+    }
+
+    @include responsivo('laptop') {
+        max-width: 28.05rem;
+
+        input {
+            font-size: 1rem;
+        }
+
+        button {
+            font-size: 1rem;
+        }
+    }
+
+    @include responsivo('tablet') {
+        margin: 0 auto;
+
+        input {
+            text-align: left;
+        }
+    }
+
+    @include responsivo('mobile') {
+        justify-content: space-between;
+        input {
+            max-width: 9.375rem;
+        }
+        .btn-primary {
+            padding: 0.75rem 1.25rem;
         }
     }
 }
@@ -84,14 +114,14 @@
         gap: 0.4rem;
 
         img {
-            width: 2.4rem;
-            height: 2.4rem;
+            width: 2.1rem;
+            height: 2.1rem;
             flex-shrink: 0;
         }
 
         span {
             color: $gray-100;
-            font-size: 1.8rem;
+            font-size: 1.4rem;
             font-weight: 600;
             line-height: 150%;
 
@@ -100,7 +130,15 @@
                 font-weight: 400;
             }
         }
+    }
 
+    @include responsivo('laptop') {
+        span {
+            font-size: 1.25rem;
+        }
+    }
 
+    @include responsivo('tablet') {
+        justify-content: center;
     }
 }
