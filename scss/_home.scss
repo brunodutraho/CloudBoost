@@ -173,10 +173,12 @@
         .container {
             padding-bottom: 3rem;
         }
+
         .top {
             flex-direction: column;
             gap: 3rem;
             margin-bottom: 5rem;
+
             h3 {
                 text-align: center;
             }
@@ -189,8 +191,10 @@
 
     @include responsivo('mobile') {
         padding-top: 4rem;
+
         .top {
             margin-bottom: 3rem;
+
             h3 {
                 font-size: 1.75rem;
             }
@@ -204,13 +208,13 @@
 }
 
 .s-marketing {
-    display: none;
     padding-top: 9.6rem;
     padding-bottom: 12.6rem;
 
     .box {
         width: 100%;
-        height: 46rem;
+        max-width: 76rem;
+        height: 28.75rem;
         border-radius: 10px;
         background: url('../img/fundo-marketing.svg') no-repeat center center;
         display: flex;
@@ -219,20 +223,59 @@
         justify-content: center;
 
         h2 {
-            font-size: 5.6rem;
-            max-width: 78.6rem;
+            font-size: 3.5rem;
+            max-width: 49.125rem;
             text-align: center;
-            margin-bottom: 0.8rem;
+            margin-bottom: 1rem;
             letter-spacing: -1.68px;
         }
 
         p {
             color: $gray-200;
             text-align: center;
-            font-size: 2rem;
+            font-size: 1.25rem;
             line-height: 150%;
-            max-width: 50.1rem;
+            max-width: 31.3125rem;
             padding-bottom: 3.2rem;
+        }
+    }
+
+    @include responsivo('tablet') {
+
+        .box {
+            padding-left: 20px;
+            padding-right: 20px;
+
+            h2 {
+                font-size: 2.5rem;
+                max-width: 33.125rem;
+            }
+
+            p {
+                font-size: 1rem;
+                max-width: 22.3125rem;
+            }
+        }
+    }
+
+    @include responsivo('mobile') {
+        padding-top: 4rem;
+        padding-bottom: 4rem;
+
+        .box {
+            height: auto;
+            background-size: cover;
+            padding-top: 7rem;
+            padding: 4rem 1.5rem;
+            h2 {
+                font-size: 2.2rem;
+                max-width: 21.125rem;
+            }
+
+            p {
+                font-size: 1rem;
+                max-width: 22.3125rem;
+            }
         }
     }
 }
