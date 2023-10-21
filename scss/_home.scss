@@ -127,8 +127,7 @@
 }
 
 .s-resources {
-    display: none;
-    padding-top: 111px;
+    padding-top: 7rem;
 
     .container {
         border-bottom: 1px solid rgba(255, 255, 255, 0.10);
@@ -138,16 +137,18 @@
     .top {
         @include flexCenterBetween;
         margin-bottom: 8rem;
+        gap: 5.75rem;
 
         h3 {
-            max-width: 69rem;
+            font-size: 2.5rem;
+            max-width: 41.3125rem;
             letter-spacing: -1.2px;
         }
 
         p {
             color: $gray-200;
-            max-width: 30.3rem;
-            font-size: 1.6rem;
+            max-width: 19.9375rem;
+            font-size: 1rem;
             line-height: 150%;
         }
     }
@@ -156,6 +157,49 @@
         display: flex;
         align-items: start;
         justify-content: space-between;
+    }
+
+    @include responsivo('laptop') {
+        padding-top: 5rem;
+
+        .all {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 70px;
+        }
+    }
+
+    @include responsivo('tablet') {
+        .container {
+            padding-bottom: 3rem;
+        }
+        .top {
+            flex-direction: column;
+            gap: 3rem;
+            margin-bottom: 5rem;
+            h3 {
+                text-align: center;
+            }
+        }
+
+        .all {
+            padding-bottom: 4.5rem;
+        }
+    }
+
+    @include responsivo('mobile') {
+        padding-top: 4rem;
+        .top {
+            margin-bottom: 3rem;
+            h3 {
+                font-size: 1.75rem;
+            }
+        }
+
+        .all {
+            gap: 4rem;
+            grid-template-columns: 1fr;
+        }
     }
 }
 
