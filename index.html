@@ -7,16 +7,17 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap"
         rel="stylesheet">
-
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cloudboost | Codeboost</title>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="css/main.min.css">
 
-    <title>Cloudboost | Codeboost</title>
+
 </head>
 
 <body>
-    <header>
+    <header data-aos="fade-up">
         <div class="container">
             <div class="content-header">
                 <a href="#">
@@ -39,7 +40,7 @@
     <section class="s-hero">
         <div class="container">
             <div class="hero-content">
-                <div class="left">
+                <div class="left" data-aos="fade-right">
                     <h1>Ferramenta de e-mail marketing perfeita para <span>sua empresa!</span></h1>
                     <p>Aproveite o potencial do e-mail marketing para ganhar vendas e fortalecer seu relacionamento com
                         clientes.</p>
@@ -63,19 +64,19 @@
                         </div>
                     </div>
                 </div>
-                <img src="img/section-hero.png" alt="Mulher no notebook">
-                <img src="img/section-hero-mobile.png" alt="Mulher no notebook" class="img-mobile">
+                <img src="img/section-hero.png" alt="Mulher no notebook" data-aos="fade-left">
+                <img src="img/section-hero-mobile.png" alt="Mulher no notebook" class="img-mobile" data-aos="fade-up">
             </div>
         </div>
     </section>
 
     <section class="s-resources">
         <div class="container">
-            <div class="top">
+            <div class="top" data-aos="fade-right">
                 <h3>Conheça os recursos da ferramenta de e-mail marketing CloudBoost</h3>
                 <p>Mais de 5.000 empresas que utilizam ✌️</p>
             </div>
-            <div class="all">
+            <div class="all" data-aos="fade-up">
                 <div class="resource-card">
                     <div class="icon">
                         <img src="img/icon-alcance-mais.svg" alt="Icon alcnace mais">
@@ -110,14 +111,15 @@
                     </div>
                     <div class="course-content">
                         <h6>Templates Boost</h6>
-                        <p>Modelos prontos para cada tipo de e-mail: newsletter, lançamento, campanha de vendas e outros.</p>
+                        <p>Modelos prontos para cada tipo de e-mail: newsletter, lançamento, campanha de vendas e
+                            outros.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="s-marketing">
+    <section class="s-marketing" data-aos="zoom-in">
         <div class="container">
             <div class="box">
                 <h2>Alavanque com a Ferramenta de E-mail Marketing Perfeita!</h2>
@@ -127,6 +129,15 @@
         </div>
     </section>
 
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 1200
+        });
+      </script>
+      
 </body>
 
 </html>
